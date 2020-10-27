@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrasi Siswa</title>
+</head>
+<body bgcolor="b6b3ff">
+  <form action="ucapan.html">
+    <fieldset>
+      <legend><b><font size="6" color="">Form Registrasi Siswa</font></b></legend>
+      <p align="right"><label><b><font size="4">Tanggal Pengisian </font></b></label><input type="date" name="tanggal_pengisian" required></p>
+      <h2>Informasi Pribadi</h2>
+      <ul>
+        <li>
+          <label><b><font size="4">Nama Lengkap</font></b></label>
+          <input type="text" name="nama" placeholder="'Budi Susanto'" required>
+        </li><br>
+        <li>
+          <label><b><font size="4">Tempat Lahir</font></b></label>
+          <input type="text" name="nama" placeholder="'Jakarta'" required>
+          <label><b><font size="4">Tanggal Lahir</font></b></label>
+          <input type="date" name="tl" required>
+        </li>
+      </ul>
+      <h2>Informasi Kontak</h2>
+      <ul>
+        <li>
+          <label><b><font size="4">Alamat</font></b></label><br>
+          <textarea name="alamat" cols="30" rows="4" placeholder="'Jl.Mangga No.3 RT.05/009'" required></textarea><br>
+          <label><b><font size="4">Kelurahan </font></b></label>
+          <input type="text" name="kelt" placeholder="'Cisalak'" required><br>
+          <label><b><font size="4">Kecamatan </font></b></label>
+          <input type="text" name="kec" placeholder="'Cimanggis'" required><br>
+          <label><b><font size="4">Kota </font></b></label>
+          <input type="text" name="kot" placeholder="'Depok'" required><br>
+          <label><b><font size="4">Provinsi </font></b></label>
+          <input type="text" name="prov" placeholder="'Jawa Barat'" required><br>
+          <label><b><font size="4">Kode Pos </font></b></label>
+          <input type="number" name="kopos" placeholder="'16452'" required><br>
+        </li><br>
+        <li>
+          <label><b><font size="4">Nomor Telepon </font></b></label>
+          <input type="number" name="nope" placeholder="'02132148735'" required>
+        </li><br>
+        <li>
+          <label><b><font size="4">Email </font></b></label>
+          <input type="email" name="email" placeholder="'user@example.com'" required>
+        </li><br>
+        <li>
+          <label><b><font size="4">Tipe Member </font></b></label>
+            <input type="radio" name="tipmem" required> Reguler
+            <input type="radio" name="tipmem" required> Premium
+            <input type="radio" name="tipmem" required> VIP
+          </li>
+      </ul>
+      <h2>Informasi Kursus</h2>
+      <ul>
+        <li>
+          <label><b><font size="4">Kursus yang Diambil </font></b></label>
+          <input type="text" name="course" placeholder="'Bahasa Inggris'" required>
+        </li><br>
+        <li>
+          <label><b><font size="4">Metode Pembayaran </font></b></label>
+            <input type="radio" name="metpem" required> Tunai
+            <input type="radio" name="metpem" required> Cek
+            <input type="radio" name="metpem" required> Kartu Kredit
+        </li><br>
+        <li>
+          <label><b><font size="4">Komentar </font></b></label><br>
+          <textarea name="komentar" cols="25" rows="4"></textarea>
+        </li>
+        <button type="submit">Simpan</button>
+      </ul>
+    </fieldset>
+  </form>
+</body>
+</html>
